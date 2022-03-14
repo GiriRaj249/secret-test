@@ -52,5 +52,4 @@ if [ ! -z "$LEAKS" ]; then
 else
     echo "no leaks found"
 fi
-© 2022 GitHub, Inc.
-Terms
+
